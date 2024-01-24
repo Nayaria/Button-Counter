@@ -1,15 +1,21 @@
+html {
+  height: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 1fr 25% 1fr 25% 1fr;
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-gap: 50px;
+    grid-gap: 1rem;
     overflow: hidden;
     background-color: #0C0032;
+    user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+    height: 100%;
 }
   #menu_checkbox {
     display: none;
@@ -25,8 +31,6 @@ body{
     width: 60px;
     height: 60px;
     cursor: pointer;
-    user-select: none;
-
   }
   label div {
     position: relative;
@@ -81,11 +85,10 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    width: 25rem;
-    transform: translateX(420px);
+    width: 50rem;
+    transform: translateX(50rem);
     transition: all .25s ease-in-out;
-}
-
+  }
 #menu_checkbox:checked + label + nav {
     transform: translateX(0);
 }
@@ -103,7 +106,7 @@ nav h1 {
     height: 4rem;
     text-align: center;
     vertical-align: middle; 
-    width: calc(100% - 0.3rem);
+    width: 100%;
     line-height: 4rem;
     margin-bottom: 2rem;
     border: 0.125rem solid transparent;
@@ -132,7 +135,6 @@ nav a {
 }
 .button1 {
     grid-column: 2;
-    grid-row: 5 / span 1;
     background-color: #282828;
     border: 0.25rem solid #828282;
     display : flex;
@@ -142,10 +144,10 @@ nav a {
     text-decoration: none;
     color: #ffffff;
     border-radius: 2rem;
+    height: 5rem;
 }
 .button2 {
     grid-column: 4;
-    grid-row: 5 / span 1;
     background-color: #282828;
     border: 0.25rem solid #828282;
     display : flex;
@@ -155,6 +157,7 @@ nav a {
     text-decoration: none;
     color: #ffffff;
     border-radius: 2rem;
+    height: 5rem;
 }
 .button1:hover {
   background-color: #828282;
