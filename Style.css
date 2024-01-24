@@ -238,13 +238,45 @@ box-shadow:
   inset 2px 2px 3px rgba(255, 255, 255, 0.6),
   inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
-
 .submit_create:hover {
 background-color: #9a9a9a;
 }
-
 .submit_create:active {
   box-shadow:
     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
+
+.submit_join {
+  grid-column: 3;
+  grid-row: 5;
+  border: 0;
+  line-height: 2.5;
+  padding: 0;
+  font-size: 3rem;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  border-radius: 4rem;
+  background-color: #ffffff;
+  margin: 0;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  .submit_join:hover {
+  background-color: #9a9a9a;
+  }
+  
+  .submit_join:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
