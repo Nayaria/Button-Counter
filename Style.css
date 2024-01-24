@@ -128,7 +128,7 @@ nav a {
 .title h1 {
     font-size: 6rem;
     margin-bottom: 0;
-    margin-top: 0.68rem;
+    margin-top: 1.2rem;
     margin-left: 2rem;
     color: #ffffff;
 }
@@ -166,6 +166,12 @@ nav a {
     -webkit-user-select: none;
     -o-user-select: none;
 }
+.button1:hover {
+  background-color: #828282;
+}
+.button2:hover {
+  background-color: #828282;
+}
 *,
 *::after,
 *::before {
@@ -174,24 +180,18 @@ nav a {
   box-sizing: inherit;
   font-size: 62,5%;
   grid-column: 2 / span 3;
-  grid-row: 5;
+  grid-row: 4;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
-.form__label {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  margin-left: 2rem;
-  margin-top: 0.7rem;
-  display: block;
-  transition: all 0.3s;
-  transform: translateY(0rem);
-}
-
-.form__input {
+.form_input {
   font-family: 'Roboto', sans-serif;
   color: #000000;
   font-size: 2rem;
 	margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 4rem;
   background-color: #ffffff;
   border: none;
@@ -199,11 +199,52 @@ nav a {
   display: block;
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
-
-.form__input:placeholder-shown + .form__label {
+.form_input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-4rem);
   transform: translateY(-4rem);
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.submit_create {
+grid-column: 3;
+grid-row: 5;
+border: 0;
+line-height: 2.5;
+padding: 0;
+font-size: 3rem;
+display : flex;
+justify-content: center;
+align-items: center;
+color: #000000;
+border-radius: 4rem;
+background-color: #ffffff;
+margin: 0;
+background-image: linear-gradient(
+  to top left,
+  rgba(0, 0, 0, 0.2),
+  rgba(0, 0, 0, 0.2) 30%,
+  rgba(0, 0, 0, 0)
+);
+box-shadow:
+  inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+  inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.submit_create:hover {
+background-color: #9a9a9a;
+}
+
+.submit_create:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
