@@ -3,11 +3,7 @@ html {
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 25% 1fr 25% 1fr;
-    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-gap: 1rem;
+    font-family: 'Roboto', sans-serif;
     overflow: hidden;
     background-color: #0C0032;
     user-select: none;
@@ -17,6 +13,7 @@ body{
     -o-user-select: none;
     height: 100%;
 }
+
   #menu_checkbox {
     display: none;
   }
@@ -24,9 +21,8 @@ body{
   label {
     position: fixed;
     z-index: 2;
-    top: 2.7rem;
-    right: 0;
-    left: 93%;
+    top: 4rem;
+    right: 4rem;
     display: block;
     width: 60px;
     height: 60px;
@@ -85,27 +81,29 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    width: 50rem;
-    transform: translateX(50rem);
+    width: 30rem;
+    transform: translateX(30rem);
     transition: all .25s ease-in-out;
   }
 #menu_checkbox:checked + label + nav {
     transform: translateX(0);
 }
+
 nav h1 {
     Font-size: 6.25rem;
     margin: 0;
     padding-left: 1rem;
     margin-bottom: 10.75rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: #ffffff;
 }
 
 .boxi {
     background-color: #3500D3;
     height: 4rem;
-    text-align: center;
-    vertical-align: middle; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     line-height: 4rem;
     margin-bottom: 2rem;
@@ -118,23 +116,33 @@ nav a {
     font-size: 2rem;
     text-decoration: none;
 }
+
 .boxi:hover {
     background-color: #240090;
 }
+
 .title {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 2;
-    position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
+
 .title h1 {
     font-size: 6rem;
     margin-bottom: 0;
-    margin-top: 1.2rem;
+    margin-top: 2rem;
     margin-left: 2rem;
     color: #ffffff;
 }
+
+.content_start {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
 .button1 {
-    grid-column: 2;
     background-color: #282828;
     border: 0.25rem solid #828282;
     display : flex;
@@ -145,26 +153,43 @@ nav a {
     color: #ffffff;
     border-radius: 2rem;
     height: 5rem;
+    width: 35rem;
+    min-width: 25rem;
+    margin-bottom: 142px;
 }
+
 .button2 {
-    grid-column: 4;
     background-color: #282828;
     border: 0.25rem solid #828282;
-    display : flex;
-    align-items : center;
+    display: flex;
+    align-items: center;
     justify-content: center;
     font-size: 3.5rem;
     text-decoration: none;
     color: #ffffff;
     border-radius: 2rem;
     height: 5rem;
+    width: 35rem;
+    min-width: 25rem;
+    margin-bottom: 142px;
 }
+
 .button1:hover {
   background-color: #828282;
 }
+
 .button2:hover {
   background-color: #828282;
 }
+
+.content_submit {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 *,
 *::after,
 *::before {
@@ -172,11 +197,9 @@ nav a {
   padding: 0;
   box-sizing: inherit;
   font-size: 62,5%;
-  grid-column: 2 / span 3;
-  grid-row: 4;
 }
+
 .form_input {
-  font-family: 'Roboto', sans-serif;
   color: #000000;
   font-size: 2rem;
 	margin: 0 auto;
@@ -188,16 +211,17 @@ nav a {
   display: block;
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
+  width: 60rem !important;
 }
+
 .form_input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-4rem);
   transform: translateY(-4rem);
 }
+
 .submit_create {
-grid-column: 3;
-grid-row: 5;
 border: 0;
 line-height: 2.5;
 padding: 0;
@@ -219,9 +243,11 @@ box-shadow:
   inset 2px 2px 3px rgba(255, 255, 255, 0.6),
   inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
+
 .submit_create:hover {
 background-color: #9a9a9a;
 }
+
 .submit_create:active {
   box-shadow:
     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
@@ -229,8 +255,6 @@ background-color: #9a9a9a;
 }
 
 .submit_join {
-  grid-column: 3;
-  grid-row: 5;
   border: 0;
   line-height: 2.5;
   padding: 0;
@@ -252,6 +276,7 @@ background-color: #9a9a9a;
     inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
   }
+
   .submit_join:hover {
   background-color: #9a9a9a;
   }
