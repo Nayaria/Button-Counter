@@ -98,7 +98,12 @@ nav h1 {
     color: #ffffff;
 }
 
-.boxi {
+nav a {
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
     background-color: #3500D3;
     height: 4rem;
     display: flex;
@@ -107,17 +112,9 @@ nav h1 {
     width: 100%;
     line-height: 4rem;
     margin-bottom: 2rem;
-    border: 0.125rem solid transparent;
-}
-nav a {
-    top: 0;
-    left: 0;
-    color: #ffffff;
-    font-size: 2rem;
-    text-decoration: none;
 }
 
-.boxi:hover {
+nav a:hover {
     background-color: #240090;
 }
 
