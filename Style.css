@@ -186,7 +186,7 @@ nav a {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -212,6 +212,7 @@ nav a {
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
   width: 60rem !important;
+  margin-bottom: 4rem;
 }
 
 .form_input:placeholder-shown + .form__label {
@@ -222,6 +223,8 @@ nav a {
 }
 
 .submit_create {
+width: 12rem;
+height: 4rem;
 border: 0;
 line-height: 2.5;
 padding: 0;
@@ -255,6 +258,8 @@ background-color: #9a9a9a;
 }
 
 .submit_join {
+  width: 12rem;
+  height: 4rem;
   border: 0;
   line-height: 2.5;
   padding: 0;
