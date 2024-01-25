@@ -97,8 +97,13 @@ nav h1 {
   margin-bottom: 10.75rem;
   margin-top: 2rem;
   color: #ffffff;
+  position: fixed;
 }
 
+.boxi {
+  top: 46%;
+  position: relative;
+}
 nav a {
   top: 0;
   left: 0;
