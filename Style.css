@@ -215,12 +215,11 @@ nav a:hover {
   padding: 1rem 2rem;
   border-radius: 4rem;
   background-color: #ffffff;
-  border: none;
-  width: 90%;
+  border: none;;
   display: block;
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
-  width: 60rem !important;
+  width: 37rem !important;
   margin-bottom: 4rem;
 }
 
@@ -233,6 +232,7 @@ nav a:hover {
 
 .submit_create {
   text-decoration: none;
+  margin-bottom: 142px;
   width: 12rem;
   height: 4rem;
   border: 0;
@@ -245,7 +245,6 @@ nav a:hover {
   color: #000000;
   border-radius: 4rem;
   background-color: #ffffff;
-  margin: 0;
   background-image: linear-gradient(
     to top left,
     #00000033,
@@ -281,7 +280,7 @@ nav a:hover {
   color: #000000;
   border-radius: 4rem;
   background-color: #ffffff;
-  margin: 0;
+  margin-bottom: 142px;
   background-image: linear-gradient(
     to top left,
     #00000033,
@@ -314,8 +313,8 @@ input[type=number]{
 
 .tiles {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
   height: 100%;
   grid-column: 1rem;
   justify-items: center;
