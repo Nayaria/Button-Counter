@@ -84,6 +84,7 @@ nav {
   width: 30rem;
   transform: translateX(30rem);
   transition: all .25s ease-in-out;
+  display: flex;
 }
 
 #menu_checkbox:checked + label + nav {
@@ -94,16 +95,21 @@ nav h1 {
   Font-size: 6.25rem;
   margin: 0;
   padding-left: 1rem;
-  margin-bottom: 10.75rem;
   margin-top: 2rem;
   color: #ffffff;
   position: fixed;
+  align-self: flex-start;
+  justify-self:flex-start;
 }
 
 .boxi {
-  top: 46%;
   position: relative;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 142px;
 }
+
 nav a {
   top: 0;
   left: 0;
