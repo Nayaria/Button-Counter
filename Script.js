@@ -4,3 +4,4 @@ document.querySelector("#Creater, #Joiner").addEventListener("keypress", functio
         evt.preventDefault();
     }
 });
+
