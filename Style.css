@@ -311,3 +311,24 @@ input::-webkit-inner-spin-button {
 input[type=number]{
   -moz-appearance: textfield;
 }
+
+.tiles {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  height: 100%;
+  grid-column: 1rem;
+}
+
+.tiles a {
+  background-color: #ffffff;
+  align-items: center;
+  height: 12rem;
+  width: 12rem;
+  margin: 4rem;
+  border: solid #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+}
