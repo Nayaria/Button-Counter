@@ -36,11 +36,3 @@ function Join() {
     // Navigate to Guest.html
     window.location.href = 'Guest.html';
 }
-
-// Retrieve the title from localStorage and set it as the document title
-var storedTitle = localStorage.getItem('tempTitle');
-if (storedTitle) {
-    document.title = storedTitle;
-    // Clear the stored title in localStorage
-    localStorage.removeItem('tempTitle');
-}
