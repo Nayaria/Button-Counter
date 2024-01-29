@@ -355,3 +355,8 @@ nav a:hover {
 .tiles_guest a:hover {
   border: 2px solid #ffffff;
 }
+
+.tiles_guest a h1 {
+  align-self: center;
+  justify-self: center !important;
+}
