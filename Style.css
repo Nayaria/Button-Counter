@@ -344,7 +344,6 @@ nav a:hover {
   width: 12rem;
   display: flex;
   align-items: flex-start;
-  justify-content: left;
   font-size: 3rem;
   color: #ffffff;
   line-height: 1;
@@ -358,5 +357,6 @@ nav a:hover {
 
 .tiles_guest a h1 {
   align-self: center;
-  justify-self: center !important;
+  justify-self: center;
+  width: 100%;
 }
