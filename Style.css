@@ -303,7 +303,7 @@ nav a:hover {
       inset 2px 2px 3px #00000099;
   }
 
-.tiles {
+.tiles_host {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(5, 20%);
@@ -313,7 +313,7 @@ nav a:hover {
   align-items: center;
 }
 
-.tiles a {
+.tiles_host a {
   background-color: #013220;
   align-items: center;
   height: 12rem;
@@ -325,6 +325,32 @@ nav a:hover {
   color: #ffffff;
 }
 
-.tiles a:hover {
+.tiles_host a:hover {
+  border: 2px solid #ffffff;
+}
+
+.tiles_guest {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
+  height: 100%;
+  grid-column: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.tiles_guest a {
+  background-color: #013220;
+  align-items: center;
+  height: 12rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+  color: #ffffff;
+}
+
+.tiles_guest a:hover {
   border: 2px solid #ffffff;
 }
