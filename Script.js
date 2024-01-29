@@ -4,3 +4,8 @@ document.querySelector("#Creater, #Joiner").addEventListener("keypress", functio
         evt.preventDefault();
     }
 });
+
+function titlechange() {
+    var newTitle = document.getElementById("Creater").value;
+    document.title = newTitle;
+}
