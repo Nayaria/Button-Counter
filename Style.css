@@ -343,7 +343,6 @@ nav a:hover {
   height: 12rem;
   width: 12rem;
   display: flex;
-  align-items: flex-start;
   font-size: 3rem;
   color: #ffffff;
   line-height: 1;
@@ -356,7 +355,14 @@ nav a:hover {
 }
 
 .tiles_guest a h1 {
+  text-align: center;
   align-self: center;
-  justify-self: center;
   width: 100%;
+  margin-right: 2rem;
+}
+
+.tiles_guest span {
+  width: 2rem;
+  float: left;
+  align-self: flex-start;
 }
