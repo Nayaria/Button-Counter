@@ -15,3 +15,14 @@ function Create() {
 
     document.title = newTitle;
 }
+
+function Join() {
+    var newTitle = document.getElementById("CodeInput").value;
+
+    if (!newTitle.trim()) {
+        alert("Please enter a title before proceeding.");
+        return;
+    }
+
+    document.title = newTitle;
+}
