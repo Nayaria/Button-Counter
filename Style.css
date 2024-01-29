@@ -206,7 +206,6 @@ nav a:hover {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-size: 62,5%;
 }
 
 .form_input {
@@ -334,7 +333,6 @@ nav a:hover {
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(5, 20%);
   height: 100%;
-  grid-column: 1rem;
   justify-items: center;
   align-items: center;
 }
@@ -345,10 +343,13 @@ nav a:hover {
   height: 12rem;
   width: 12rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 7rem;
+  align-items: flex-start;
+  justify-content: left;
+  font-size: 3rem;
   color: #ffffff;
+  line-height: 1;
+  padding-left: 0.2rem;
+  padding-top: 0.14rem;
 }
 
 .tiles_guest a:hover {
