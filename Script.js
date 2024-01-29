@@ -5,7 +5,13 @@ document.querySelector("#Creater, #Joiner").addEventListener("keypress", functio
     }
 });
 
-function titlechange() {
-    var newTitle = document.getElementById("Creater").value;
+function Create() {
+    var newTitle = document.getElementById("CodeInput").value;
+
+    if (!newTitle.trim()) {
+        alert("Please enter a title before proceeding.");
+        return;
+    }
+
     document.title = newTitle;
 }
