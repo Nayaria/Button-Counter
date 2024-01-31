@@ -6,11 +6,6 @@ body{
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
   background-image: radial-gradient(circle, #00563B 0%, #4A5D23 100%);
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
   height: 100%;
 }
 
@@ -39,6 +34,11 @@ input[type=number] {
   width: 60px;
   height: 60px;
   cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 label div {
   position: relative;
@@ -97,6 +97,11 @@ nav {
   transform: translateX(35rem);
   transition: all .25s ease-in-out;
   display: flex;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 #menu_checkbox:checked + label + nav {
@@ -178,6 +183,11 @@ nav a:hover {
   width: 35rem;
   min-width: 25rem;
   margin-bottom: 142px;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .button2 {
@@ -194,6 +204,11 @@ nav a:hover {
   width: 35rem;
   min-width: 25rem;
   margin-bottom: 142px;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .button1:hover {
@@ -210,6 +225,11 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 *,
@@ -266,6 +286,11 @@ nav a:hover {
   box-shadow:
     inset 2px 2px 3px #ffffff99,
     inset -2px -2px 3px #00000099;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 .submit_create:hover {
@@ -302,6 +327,11 @@ nav a:hover {
   box-shadow:
     inset 2px 2px 3px #ffffff99,
     inset -2px -2px 3px #00000099;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
   }
 
   .submit_join:hover {
@@ -322,6 +352,11 @@ nav a:hover {
   grid-column: 1rem;
   justify-items: center;
   align-items: center;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .tiles_host a {
@@ -347,6 +382,11 @@ nav a:hover {
   height: 100%;
   justify-items: center;
   align-items: center;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .tiles_guest a {
