@@ -1,5 +1,5 @@
 document.querySelector("#CodeInput").addEventListener("keypress", function (evt) {
-    console.log (evt)
+    //console.log (evt)
     if (evt.which < 48 || evt.which > 57)
     {
         evt.preventDefault();
