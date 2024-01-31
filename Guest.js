@@ -7,7 +7,5 @@
         var roomNameElement = document.getElementById("RoomName");
         // Change the text content of the h1 element
         roomNameElement.textContent = storedTitle;
-        // Clear the stored title in localStorage
-        localStorage.removeItem('tempTitle');
     }
 })();
