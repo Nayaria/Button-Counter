@@ -16,7 +16,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type=number] {
-  -moz-apearance: textfield;
+  -moz-appearance: textfield;
 }
 
 #menu_checkbox {
