@@ -417,3 +417,17 @@ nav a:hover {
   float: left;
   align-self: flex-start;
 }
+
+.content_about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 3rem;
+}
+
+.text1 {
+
+}
+
+.text2 {
+  
+}
