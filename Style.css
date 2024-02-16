@@ -419,15 +419,36 @@ nav a:hover {
 }
 
 .content_about {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
 }
 
-.text1 {
-
+.tutorial_row {
+  display: flex;
+  width: 80%;
+  margin-bottom: 1.5rem;
+  border: 2px solid #ffffff;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-.text2 {
-  
+.about_text {
+  flex: 1;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+  color: #ffffff;
+}
+
+.about_picture {
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+.about_picture img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+  width: 150%;
 }
