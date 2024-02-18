@@ -4,6 +4,10 @@ addEventListener("keypress", function (evt) {
     {
         evt.preventDefault();
     }
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        Join();
+      }
 });
 
 function Create() {
