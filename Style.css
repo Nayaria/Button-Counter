@@ -343,7 +343,6 @@ nav a:hover {
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(5, 20%);
   height: 100%;
-  grid-column: 1rem;
   justify-items: center;
   align-items: center;
   user-select: none;
