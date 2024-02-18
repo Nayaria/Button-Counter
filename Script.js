@@ -8,38 +8,35 @@ addEventListener("keypress", function (evt) {
 
 function Create() {
     var newTitle = document.getElementById("CodeInput").value;
-
-    // Check if the input field is empty
     if (!newTitle.trim()) {
         alert("Please enter a room ID before proceeding.");
         return;
     }
-
-    // Store the title in localStorage
     localStorage.setItem('tempTitle', newTitle);
-
-    // Navigate to Host.html
     window.location.href = 'Host.html';
 }
 
 function Join() {
     var newTitle = document.getElementById("CodeInput").value;
-
-    // Check if the input field is empty
     if (!newTitle.trim()) {
         alert("Please enter a room ID before proceeding.");
         return;
     }
-
-    // Store the title in localStorage
     localStorage.setItem('tempTitle', newTitle);
-
-    // Navigate to Guest.html
     window.location.href = 'Guest.html';
 }
 
 document.getElementById("navbar_icon").addEventListener("click", function() {
     var checkbox = document.getElementById("menu_checkbox");
     checkbox.checked = !checkbox.checked;
-  });
-  
+});
+
+function checkMaxLength(input, maxLength) {
+    if (input.value.length > maxLength) {
+      input.value = input.value.slice(0, maxLength);
+    }
+}
+
+document.getElementById("CodeInput").addEventListener("input", function() {
+  checkMaxLength(this, 20);
+});
