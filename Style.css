@@ -421,5 +421,6 @@ nav a:hover {
 
 iframe{
   margin-top: 10rem;
-  border-radius: 1rem;;
+  border-radius: 1rem;
+  border: none;
 }
