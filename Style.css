@@ -19,7 +19,7 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-  label {
+span {
   position: fixed;
   z-index: 2;
   top: 4rem;
@@ -34,7 +34,7 @@ input::-webkit-inner-spin-button {
   -webkit-user-select: none;
   -o-user-select: none;
 }
-label div {
+span div {
   position: relative;
   top: 0;
   height: 12px;
@@ -45,35 +45,35 @@ label div {
   border-radius: 2px;
 }
   
-label div:first-child {
+span div:first-child {
   transform-origin: 0;
 }
   
-label div:last-child {
+span div:last-child {
   margin-bottom: 0;
   transform-origin: 60px;
 }
   
-label div:nth-child(2) {
+span div:nth-child(2) {
   right: 0;
   width: 60px;
 }
   
-#menu_checkbox:checked + label:before {
+#menu_checkbox:checked + span:before {
   background-color: #ffffff;
 }
  
-#menu_checkbox:checked + label div:first-child {
+#menu_checkbox:checked + span div:first-child {
   top: -6px;
   transform: rotateZ(45deg);
 }
   
-#menu_checkbox:checked + label div:last-child {
+#menu_checkbox:checked + span div:last-child {
   top: 6px;
   transform: rotateZ(45deg);
 }
   
-#menu_checkbox:checked + label div:nth-child(2) {
+#menu_checkbox:checked + span div:nth-child(2) {
   width: 85px;
   top: 0;
   right: 13px;
@@ -98,7 +98,7 @@ nav {
   -o-user-select: none;
 }
 
-#menu_checkbox:checked + label + nav {
+#menu_checkbox:checked + span + nav {
     transform: translateX(0);
 }
 
@@ -408,7 +408,7 @@ nav a:hover {
   font-size: 10rem;
 }
 
-.tiles_guest span {
+.tiles_guest h2 {
   width: 2rem;
   float: left;
   align-self: flex-start;

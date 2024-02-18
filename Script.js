@@ -1,4 +1,4 @@
-document.querySelector("#CodeInput").addEventListener("keypress", function (evt) {
+addEventListener("keypress", function (evt) {
     //console.log (evt)
     if (evt.which < 48 || evt.which > 57)
     {
@@ -37,3 +37,9 @@ function Join() {
     // Navigate to Guest.html
     window.location.href = 'Guest.html';
 }
+
+document.getElementById("navbar_icon").addEventListener("click", function() {
+    var checkbox = document.getElementById("menu_checkbox");
+    checkbox.checked = !checkbox.checked;
+  });
+  
